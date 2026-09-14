@@ -1,0 +1,12 @@
+{
+  "actorSpecification": 1,
+  "name": "qr-code-generator-invoice-content-scraper",
+  "title": "QR Code Generator Content Scraper",
+  "version": "1.0",
+  "description": "SEO-focused webpage content scraper for extracting structured content, headings, metadata, links, and images from a QR Code Generator related webpage.",
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  }
+}
