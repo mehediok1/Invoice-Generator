@@ -1,0 +1,94 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "type": "object",
+    "properties": {
+      "url": {
+        "type": "string",
+        "title": "URL",
+        "description": "Final URL of the crawled webpage."
+      },
+      "title": {
+        "type": "string",
+        "title": "Page Title",
+        "description": "HTML title of the webpage."
+      },
+      "metaDescription": {
+        "type": "string",
+        "title": "Meta Description",
+        "description": "Meta description extracted from the webpage."
+      },
+      "canonicalUrl": {
+        "type": "string",
+        "title": "Canonical URL",
+        "description": "Canonical URL declared by the webpage."
+      },
+      "h1": {
+        "type": "string",
+        "title": "H1",
+        "description": "Primary H1 heading of the webpage."
+      },
+      "headings": {
+        "type": "array",
+        "title": "Headings",
+        "description": "All H1-H6 headings found on the webpage."
+      },
+      "content": {
+        "type": "string",
+        "title": "Page Content",
+        "description": "Cleaned textual content extracted from the webpage."
+      },
+      "wordCount": {
+        "type": "integer",
+        "title": "Word Count",
+        "description": "Number of words extracted from the webpage content."
+      },
+      "images": {
+        "type": "array",
+        "title": "Images",
+        "description": "Image URLs and alternative text found on the webpage."
+      },
+      "internalLinks": {
+        "type": "array",
+        "title": "Internal Links",
+        "description": "Internal links found on the webpage."
+      },
+      "externalLinks": {
+        "type": "array",
+        "title": "External Links",
+        "description": "External links found on the webpage."
+      },
+      "language": {
+        "type": "string",
+        "title": "Language",
+        "description": "Language attribute declared by the HTML document."
+      },
+      "scrapedAt": {
+        "type": "string",
+        "title": "Scraped At",
+        "description": "ISO timestamp indicating when the webpage was crawled."
+      }
+    }
+  },
+  "views": {
+    "overview": {
+      "title": "QR Code Generator SEO Overview",
+      "transformation": {
+        "fields": [
+          "url",
+          "title",
+          "metaDescription",
+          "canonicalUrl",
+          "h1",
+          "wordCount",
+          "language",
+          "scrapedAt"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {}
+      }
+    }
+  }
+}
