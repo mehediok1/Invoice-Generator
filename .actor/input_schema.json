@@ -1,0 +1,39 @@
+{
+  "title": "QR Code Generator Input",
+  "description": "Extract SEO and webpage content from a QR Code Generator related page.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrls": {
+      "title": "Start URLs",
+      "type": "array",
+      "description": "URLs to crawl and extract QR Code Generator related content from.",
+      "editor": "requestListSources",
+      "prefill": [
+        {
+          "url": "https://zoneoftools.com/tools/invoice-generator"
+        }
+      ]
+    },
+    "maxCrawlPages": {
+      "title": "Maximum pages",
+      "type": "integer",
+      "description": "Maximum number of webpages to crawl.",
+      "minimum": 1,
+      "maximum": 1000,
+      "default": 1
+    },
+    "includeImages": {
+      "title": "Include images",
+      "type": "boolean",
+      "description": "Extract image URLs and alternative text from the webpage.",
+      "default": true
+    },
+    "includeLinks": {
+      "title": "Include links",
+      "type": "boolean",
+      "description": "Extract internal and external links found on the webpage.",
+      "default": true
+    }
+  }
+}
