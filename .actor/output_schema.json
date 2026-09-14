@@ -1,0 +1,13 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "QR Code Generator Output",
+  "description": "Structured webpage data including SEO metadata, headings, content, links, and images.",
+  "properties": {
+    "crawlResults": {
+      "type": "string",
+      "title": "Crawl Results",
+      "description": "Structured webpage data extracted from the target QR Code Generator related page.",
+      "template": "{{links.apiDefaultDatasetUrl}}/items"
+    }
+  }
+}
